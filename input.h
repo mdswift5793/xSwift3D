@@ -1,5 +1,5 @@
 #ifndef INPUT_H
-#define INPUT_H
+#define INPUT_H 0x0004
 #include "command.h"
 
 command* KEY_W = &JUMP;

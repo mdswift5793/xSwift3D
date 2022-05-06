@@ -1,10 +1,10 @@
 #ifndef GAMEACTOR_H
 #define GAMEACTOR_H 0x0003
-#define MAX_NUM 500
+#define MAX_NUM 128
 #include <stdlib.h>
 
-
 struct game_actor *player;
+struct game_actor *actors[MAX_NUM];
 
 typedef void (*move)(vector v);
 typedef struct game_actor {
