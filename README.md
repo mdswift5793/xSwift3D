@@ -1,0 +1,3 @@
+xSwift 3D is a new game engine trademarked, copyrighted, and licensed to Platonic Software Systems, a subsidiary of Swift Enterprises LLC.
+
+Use of this code constitutes an agreement that you will not sell or distribute it and are a member of a University in which you are studying. This code can be used for learning purposes, but otherwise it is not available for resale or redistribution except through Swift Enterprises LLC and Platonic Software Systems.
