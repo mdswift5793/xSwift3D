@@ -1,6 +1,7 @@
 #ifndef GAMEACTOR_H
 #define GAMEACTOR_H 0x0003
 #define MAX_NUM 500
+#include <stdlib.h>
 
 
 struct game_actor *player;
