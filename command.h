@@ -1,28 +1,29 @@
 #ifndef COMMAND_H
 #define COMMAND_H 0x0001
-#include "game_actor.h"
+#include "gameactor.h"
+#include "vector.h"
 
-void jump(game_actor *a){
-    a->move(UP);
+void jump(struct game_actor *a){
+    a->move(&UP);
 }
-void move_left(game_actor *a){
-    a->move(LEFT);
+void move_left(struct game_actor *a){
+    a->move(&LEFT);
 }
-void move_right(game_actor *a){
-    a->move(RIGHT);
+void move_right(struct game_actor *a){
+    a->move(&RIGHT);
 }
-void crouch(game_actor *a){
-    a->move(DOWN);
+void crouch(struct game_actor *a){
+    a->move(&DOWN);
 }
 
-typedef void (*execute)(game_actor *a);
+typedef void (*execute)(struct game_actor *a);
 typedef struct command {
     execute execute;
 } command;
 
-command JUMP {jump};
-command MOVE_LEFT {move_left};
-command MOVE_RIGHT {move_right};
-command CROUCH {crouch};
+command JUMP = {jump};
+command MOVE_LEFT = {move_left};
+command MOVE_RIGHT = {move_right};
+command CROUCH = {crouch};
 
 #endif
